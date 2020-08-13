@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Title="Animations Galore" xmlns="http://xamarin.com/schemas/2014/forms"
+             ControlTemplate="{StaticResource PageWithGradient}"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AnimationsSample.MainPage">
+    <ScrollView>
+        <StackLayout Padding="15,10,15,10" Spacing="0">
+            <!-- Place new controls here -->
+            <Label Text="Animation Demo" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+
+            <Button x:Name="Card3D" Text="Card 3D" Clicked="Card3D_Clicked" />
+            <Button x:Name="Scale2X" Text="Scale To 2x" Clicked="Scale2X_Clicked" />
+            <Button x:Name="Shake" Text="The Apple Shake" Clicked="Shake_Clicked" />
+            <Button x:Name="Bounce" Text="MacOS Bouncy Icons" Clicked="Bounce_Clicked" />
+            <Button x:Name="Gradient" Text="Pancake Gradient Shifts" Clicked="Gradient_Clicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

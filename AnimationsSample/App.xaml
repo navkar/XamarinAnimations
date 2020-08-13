@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="AnimationsSample.App">
+    <Application.Resources>
+
+
+    <ControlTemplate x:Key="PageWithGradient">
+        <Grid>
+            <magic:GradientView VerticalOptions="FillAndExpand" >
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                                linear-gradient(230deg, rgba(98, 138, 224, 0.46) 0%, rgba(98, 138, 224, 0.46) 14.286%,rgba(107, 116, 201, 0.46) 14.286%, rgba(107, 116, 201, 0.46) 28.572%,rgba(115, 94, 178, 0.46) 28.572%, rgba(115, 94, 178, 0.46) 42.858%,rgba(124, 73, 156, 0.46) 42.858%, rgba(124, 73, 156, 0.46) 57.144%,rgba(133, 51, 133, 0.46) 57.144%, rgba(133, 51, 133, 0.46) 71.43%,rgba(141, 29, 110, 0.46) 71.43%, rgba(141, 29, 110, 0.46) 85.716%,rgba(150, 7, 87, 0.46) 85.716%, rgba(150, 7, 87, 0.46) 100.002%),linear-gradient(140deg, rgb(60, 13, 119) 0%, rgb(60, 13, 119) 14.286%,rgb(50, 25, 138) 14.286%, rgb(50, 25, 138) 28.572%,rgb(41, 36, 156) 28.572%, rgb(41, 36, 156) 42.858%,rgb(31, 48, 175) 42.858%, rgb(31, 48, 175) 57.144%,rgb(21, 59, 194) 57.144%, rgb(21, 59, 194) 71.43%,rgb(12, 71, 212) 71.43%, rgb(12, 71, 212) 85.716%,rgb(2, 82, 231) 85.716%, rgb(2, 82, 231) 100.002%)
+                             ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            <ContentPresenter />
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="LightGradient">
+        <Grid>
+            <magic:GradientView VerticalOptions="FillAndExpand" >
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                                  linear-gradient(210deg, rgba(173, 211, 227, 0.45) 0%, rgba(173, 211, 227, 0.45) 14.286%,rgba(154, 202, 217, 0.45) 14.286%, rgba(154, 202, 217, 0.45) 28.572%,rgba(135, 192, 208, 0.45) 28.572%, rgba(135, 192, 208, 0.45) 42.858%,rgba(116, 183, 198, 0.45) 42.858%, rgba(116, 183, 198, 0.45) 57.144%,rgba(97, 174, 188, 0.45) 57.144%, rgba(97, 174, 188, 0.45) 71.43%,rgba(78, 164, 179, 0.45) 71.43%, rgba(78, 164, 179, 0.45) 85.716%,rgba(59, 155, 169, 0.45) 85.716%, rgba(59, 155, 169, 0.45) 100.002%),linear-gradient(120deg, rgb(182, 134, 222) 0%, rgb(182, 134, 222) 14.286%,rgb(168, 120, 221) 14.286%, rgb(168, 120, 221) 28.572%,rgb(154, 106, 220) 28.572%, rgb(154, 106, 220) 42.858%,rgb(141, 93, 220) 42.858%, rgb(141, 93, 220) 57.144%,rgb(127, 79, 219) 57.144%, rgb(127, 79, 219) 71.43%,rgb(113, 65, 218) 71.43%, rgb(113, 65, 218) 85.716%,rgb(99, 51, 217) 85.716%, rgb(99, 51, 217) 100.002%)
+                             ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            <ContentPresenter />
+        </Grid>
+    </ControlTemplate>
+
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="FontSize" Value="Title"/>
+    </Style>
+
+    <Style TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="BorderColor" Value="White" />
+            <Setter Property="BorderWidth" Value="2" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White" />
+     </Style>
+
+    </Application.Resources>
+</Application>
