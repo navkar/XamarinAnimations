@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Title="The Apple Shake" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AnimationsSample.ProfileShakePage">
+<ContentPage Title="The Apple Shake" xmlns="http://xamarin.com/schemas/2014/forms"
+             ControlTemplate="{StaticResource PageWithGradient}"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AnimationsSample.ProfileShakePage">
     <Grid Padding="24,40">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -7,10 +9,13 @@
         </Grid.RowDefinitions>
 
         <StackLayout x:Name="profile" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="User Profile" HorizontalTextAlignment="Center" FontSize="45" />
             <Image Source="profile" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" />
-            <Entry WidthRequest="200" Placeholder="Account name..." />
+
+            <Label Text="UserName" HorizontalTextAlignment="Center" FontSize="Small" />
+            <Entry WidthRequest="200" Placeholder="..." />
         </StackLayout>
 
-        <Button  Grid.Row="1" x:Name="StartAnimation" Text="Start animation" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
+        <Button  Grid.Row="1" x:Name="StartAnimation" Text="Shake It" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
     </Grid>
 </ContentPage>

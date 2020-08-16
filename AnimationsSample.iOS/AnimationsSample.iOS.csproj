@@ -119,9 +119,6 @@
     <ImageAsset Include="Assets.xcassets\pancake.imageset\Contents.json">
       <Visible>False</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%403x.png" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%402x.png" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile.png" />
     <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json">
       <Visible>False</Visible>
     </ImageAsset>
@@ -131,6 +128,9 @@
     <ImageAsset Include="Assets.xcassets\rainbow.imageset\Contents.json">
       <Visible>False</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile.imageset\user.png" />
+    <ImageAsset Include="Assets.xcassets\profile.imageset\user %281%29.png" />
+    <ImageAsset Include="Assets.xcassets\profile.imageset\user %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

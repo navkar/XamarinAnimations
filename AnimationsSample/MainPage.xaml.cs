@@ -17,6 +17,7 @@ namespace AnimationsSample
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetBackButtonTitle(this, string.Empty);
         }
 
         async void Card3D_Clicked(System.Object sender, System.EventArgs e)

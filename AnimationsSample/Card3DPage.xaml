@@ -9,7 +9,7 @@
         </Grid.RowDefinitions>
 
         <Grid Padding="54">
-            <Frame x:Name="card" VerticalOptions="Center" HeightRequest="200" Padding="40">
+            <Frame x:Name="card" VerticalOptions="Center" HeightRequest="200" CornerRadius="25" BackgroundColor="LightGray" Padding="40">
                 <Label Text="Star Wars" TextColor="{StaticResource TextColor}"
                        VerticalOptions="Center" HorizontalTextAlignment="Center" />
             </Frame>

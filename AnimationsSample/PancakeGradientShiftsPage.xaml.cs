@@ -21,10 +21,11 @@ namespace AnimationsSample
                 _isAnimating = true;
                 status.Text = "RUNNING";
 
-                await pancake.ColorTo(Color.FromHex("#8845b8"), Color.FromHex("#c23569"), c => pancake.BackgroundGradientStartColor = c, 5000, Easing.Linear);
-                await pancake.ColorTo(Color.FromHex("#f52e33"), Color.FromHex("#ff9e4f"), c => pancake.BackgroundGradientEndColor = c, 5000, Easing.Linear);
-                await pancake.ColorTo(Color.FromHex("#c23569"), Color.FromHex("#8845b8"), c => pancake.BackgroundGradientStartColor = c, 5000, Easing.Linear);
-                await pancake.ColorTo(Color.FromHex("#ff9e4f"), Color.FromHex("#f52e33"), c => pancake.BackgroundGradientEndColor = c, 5000, Easing.Linear);
+                for (int i = 0; i < 4; i++)
+                {
+                    await pancake.ColorTo(pancake.BackgroundGradientStartColor, pancake.BackgroundGradientEndColor, c => pancake.BackgroundGradientEndColor = c, 2000, Easing.Linear);
+                    await pancake.ColorTo(pancake.BackgroundGradientEndColor, pancake.BackgroundGradientStartColor, c => pancake.BackgroundGradientStartColor = c, 2000, Easing.Linear);
+                }
 
                 status.Text = "DONE";
                 _isAnimating = false;
