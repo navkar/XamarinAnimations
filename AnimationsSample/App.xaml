@@ -41,6 +41,7 @@
         </Grid>
     </ControlTemplate>
 
+    <Color x:Key="TextColor">#8E2DE2</Color>
 
     <Style TargetType="Label">
         <Setter Property="TextColor" Value="White"/>

@@ -21,9 +21,9 @@ namespace AnimationsSample
                 _isAnimating = true;
 
                 await Task.WhenAll(
-                  card.RotateTo(40, 10000),
-                  card.RotateXTo(40, 10000),
-                  card.RotateYTo(40, 10000)
+                  card.RotateTo(40, 1000),
+                  card.RotateXTo(40, 1000),
+                  card.RotateYTo(40, 1000)
                 );
             }
             else

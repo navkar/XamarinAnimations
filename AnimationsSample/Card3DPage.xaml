@@ -10,7 +10,8 @@
 
         <Grid Padding="54">
             <Frame x:Name="card" VerticalOptions="Center" HeightRequest="200" Padding="40">
-                <Label Text="There's data on this card too!" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+                <Label Text="Star Wars" TextColor="{StaticResource TextColor}"
+                       VerticalOptions="Center" HorizontalTextAlignment="Center" />
             </Frame>
         </Grid>
 
