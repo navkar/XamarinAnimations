@@ -48,7 +48,7 @@
                     <magic:CssGradientSource>
                         <x:String>
                             <![CDATA[
-                                 linear-gradient(45deg, transparent 0%, transparent 30%,rgba(231, 84, 216,0.5) 30%, rgba(231, 84, 216,0.5) 58%,transparent 58%, transparent 72%,rgba(122, 77, 232,0.5) 72%, rgba(122, 77, 232,0.5) 100%),linear-gradient(0deg, rgb(67, 74, 240) 0%, rgb(67, 74, 240) 33%,rgb(231, 84, 216) 33%, rgb(231, 84, 216) 47%,transparent 47%, transparent 69%,rgb(122, 77, 232) 69%, rgb(122, 77, 232) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255))
+                                 linear-gradient(315deg, transparent 0%, transparent 30%,rgba(231, 84, 216,0.5) 30%, rgba(231, 84, 216,0.5) 58%,transparent 58%, transparent 72%,rgba(122, 77, 232,0.5) 72%, rgba(122, 77, 232,0.5) 100%),linear-gradient(270deg, rgb(38,45,200) 0%, rgb(38,45,200) 33%,rgb(182,53,227) 33%, rgb(182,53,227) 47%,transparent 47%, transparent 69%,rgb(122, 77, 232) 69%, rgb(122, 77, 232) 100%),linear-gradient(360deg, rgb(89,60,208),rgb(89,60,208))
                              ]]>
                         </x:String>
                     </magic:CssGradientSource>
@@ -61,7 +61,7 @@
     <Color x:Key="TextColor">#8E2DE2</Color>
 
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="TextColor" Value="AntiqueWhite"/>
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="FontSize" Value="Title"/>
     </Style>
@@ -70,12 +70,17 @@
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             <Setter Property="BackgroundColor" Value="Transparent" />
-            <Setter Property="BorderColor" Value="White" />
+            <Setter Property="BorderColor" Value="AntiqueWhite" />
             <Setter Property="BorderWidth" Value="2" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontSize" Value="Large"/>
-            <Setter Property="TextColor" Value="White" />
+            <Setter Property="TextColor" Value="AntiqueWhite" />
      </Style>
+
+   <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#593CD0"> </Setter>
+            <Setter Property="BarTextColor" Value="AntiqueWhite"></Setter>
+   </Style>
 
     </Application.Resources>
 </Application>
