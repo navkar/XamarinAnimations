@@ -16,6 +16,6 @@
             <Entry WidthRequest="200" Placeholder="..." />
         </StackLayout>
 
-        <Button  Grid.Row="1" x:Name="StartAnimation" Text="Shake It" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
+        <Button  Grid.Row="1" x:Name="StartAnimation" Style="{StaticResource flipButton}" Text="Shake It" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
     </Grid>
 </ContentPage>
