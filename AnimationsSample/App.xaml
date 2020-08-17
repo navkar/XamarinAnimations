@@ -77,6 +77,15 @@
             <Setter Property="TextColor" Value="AntiqueWhite" />
      </Style>
 
+    <Style TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="{d:StaticResource TextColor}" />
+     </Style>
+
     <Style TargetType="Button" x:Key="flipButton">
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />

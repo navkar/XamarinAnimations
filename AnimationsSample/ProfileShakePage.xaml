@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="The Apple Shake" xmlns="http://xamarin.com/schemas/2014/forms"
              ControlTemplate="{StaticResource PageWithGradient}"
+             xmlns:controls="clr-namespace:AnimationsSample.Controls"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AnimationsSample.ProfileShakePage">
     <Grid Padding="24,40">
         <Grid.RowDefinitions>
@@ -9,11 +10,15 @@
         </Grid.RowDefinitions>
 
         <StackLayout x:Name="profile" VerticalOptions="Center" HorizontalOptions="Center">
-            <Label Text="User Profile" HorizontalTextAlignment="Center" FontSize="45" />
+
             <Image Source="profile" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" />
 
-            <Label Text="UserName" HorizontalTextAlignment="Center" FontSize="Small" />
-            <Entry WidthRequest="200" Placeholder="..." />
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Margin="0,30,0,0">
+                <controls:EditableLabel Text="Captain America" TextColor="AntiqueWhite"
+                                        HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                <!--<controls:EditableLabel Text="{Binding Text, Source={x:Reference UserNameEntry}, Mode=TwoWay}"/>
+                <Entry x:Name="UserNameEntry" Placeholder="...."/>-->
+            </StackLayout>
         </StackLayout>
 
         <Button  Grid.Row="1" x:Name="StartAnimation" Style="{StaticResource flipButton}" Text="Shake It" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />

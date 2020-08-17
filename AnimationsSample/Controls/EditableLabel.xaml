@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="root"
+             xmlns:controls="clr-namespace:AnimationsSample.Controls"
+             x:Class="AnimationsSample.Controls.EditableLabel">
+    <ContentView.Triggers>
+        <DataTrigger Binding="{Binding IsFocusedMode, Source={x:Reference root}}" Value="False" TargetType="ContentView">
+            <Setter Property="Content">
+                <Setter.Value>
+                    <Label x:Name="MainLabel" FontAttributes="{Binding FontAttributes, Source={x:Reference root}}" FontFamily="{Binding FontFamily, Source={x:Reference root}}"
+                           Text="{Binding Text, Source={x:Reference root}, Mode=TwoWay}" TextColor="{Binding TextColor, Source={x:Reference root}}" FontSize="{Binding FontSize, Source={x:Reference root}}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Setter.Value>
+            </Setter>
+        </DataTrigger>
+        <DataTrigger Binding="{Binding  IsFocusedMode, Source={x:Reference root}}" Value="True" TargetType="controls:EditableLabel">
+            <Setter Property="Content">
+                <Setter.Value>
+                    <Entry Placeholder="{Binding PlaceHolder, Source={x:Reference root}}" 
+                           FontAttributes="{Binding FontAttributes, Source={x:Reference root}}" x:Name="MainEntry" 
+                           TextColor="{Binding TextColor, Source={x:Reference root}}"
+                           Text="{Binding Text, Source={x:Reference root}, Mode=TwoWay}" 
+                           FontSize="{Binding FontSize, Source={x:Reference root}}"/>
+                </Setter.Value>
+            </Setter>
+        </DataTrigger>
+        <DataTrigger TargetType="controls:EditableLabel" Binding="{Binding IsFocused, Source={x:Reference MainEntry}}" Value="False">
+            <Setter Property="IsFocusedMode" Value="False"/>
+        </DataTrigger>
+    </ContentView.Triggers>
+</ContentView>
