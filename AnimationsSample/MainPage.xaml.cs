@@ -57,5 +57,11 @@ namespace AnimationsSample
             await btn.ChangeBackgroundColorTo(actualColor, 100, Easing.SinOut);
         }
 
+        void SnackBar_Clicked(object sender, EventArgs e)
+        {
+            mySnack.Message = "You are entered the incorrect parameter. This is a long message.";
+            mySnack.IsOpen = !mySnack.IsOpen;
+        }
+
     }
 }

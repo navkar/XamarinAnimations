@@ -1,18 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage Title="Animations" xmlns="http://xamarin.com/schemas/2014/forms"
              ControlTemplate="{StaticResource AbstractShapes}"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AnimationsSample.MainPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:AnimationsSample.Controls"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AnimationsSample.MainPage">
     
     <ScrollView>
-        <StackLayout Padding="15,10,15,10" Spacing="0">
-            <!-- Place new controls here -->
-            <Label Text="Animation Demo" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+            <Grid>
 
-            <Button x:Name="Card3D" Text="Card 3D" Clicked="Card3D_Clicked" />
-            <Button x:Name="Scale2X" Text="Scale To 2x" Clicked="Scale2X_Clicked" />
-            <Button x:Name="Shake" Text="The Apple Shake" Clicked="Shake_Clicked" />
-            <Button x:Name="Bounce" Text="MacOS Bouncy Icons" Clicked="Bounce_Clicked" />
-            <Button x:Name="Gradient" Text="Pancake Gradient Shifts" Clicked="Gradient_Clicked" />
-        </StackLayout>
+            <StackLayout Padding="15,10,15,5" Spacing="0" Grid.Row="0">
+                <!-- Place new controls here -->
+                <Label Text="Animation Demo" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+
+                <Button x:Name="Card3D" Text="Card 3D" Clicked="Card3D_Clicked" />
+                <Button x:Name="Scale2X" Text="Scale To 2x" Clicked="Scale2X_Clicked" />
+                <Button x:Name="Shake" Text="The Apple Shake" Clicked="Shake_Clicked" />
+                <Button x:Name="Bounce" Text="MacOS Bouncy Icons" Clicked="Bounce_Clicked" />
+                <Button x:Name="Gradient" Text="Pancake Gradient Shifts" Clicked="Gradient_Clicked" />
+                <Button Text="Open SnackBar" Clicked="SnackBar_Clicked" />
+            </StackLayout>
+
+            <!-- Snackbar must be placed in the end due to overlay! -->
+            <controls:SnackBar Margin="5,10,5,0" Grid.Row="0"
+                x:Name="mySnack" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                                BackgroundColor="#323232" 
+                                TextColor="White"
+                                IsOpen="False"
+                                VerticalOptions="Start"
+                                CloseButtonText="DISMISS"
+                                Message=""
+                                ButtonTextColor="LightYellow" />
+         </Grid>
     </ScrollView>
 </ContentPage>
