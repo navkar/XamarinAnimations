@@ -28,7 +28,7 @@
                                 IsOpen="False"
                                 VerticalOptions="Start"
                                 CloseButtonText="DISMISS"
-                                Message=""
+                                Message=""  
                                 ButtonTextColor="LightYellow" />
          </Grid>
     </ScrollView>
