@@ -18,7 +18,7 @@
         <Label x:Name="status" Text="" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="White" />
 
         <Button  Grid.Row="1" x:Name="StartAnimation" Style="{StaticResource flipButton}"
-                 Text="Start/stop animation" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
+                 Text="Start/Stop" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
     </Grid>
 
 </ContentPage>

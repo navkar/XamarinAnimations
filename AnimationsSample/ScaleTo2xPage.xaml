@@ -11,6 +11,6 @@
 
         <Image Source="pancake" x:Name="image" VerticalOptions="Center" />
 
-        <Button  Grid.Row="1" x:Name="StartAnimation" Text="Start/stop animation" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
+        <Button  Grid.Row="1" x:Name="StartAnimation" Text="Start/Stop" Clicked="StartStopAnimation_Clicked" VerticalOptions="Center" />
     </Grid>
 </ContentPage>

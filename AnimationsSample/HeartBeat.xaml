@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             ControlTemplate="{StaticResource AbstractShapes}"
+             x:Class="AnimationsSample.HeartBeat">
+    <Grid Padding="24,40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" x:Name="heart" Source="heart" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <Button  Grid.Row="1" x:Name="StartAnimation" Style="{StaticResource flipButton}"
+                 Text="Start/Stop" Clicked="StartAnimation_Clicked" VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

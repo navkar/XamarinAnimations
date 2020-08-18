@@ -131,6 +131,10 @@
     <ImageAsset Include="Assets.xcassets\profile.imageset\user.png" />
     <ImageAsset Include="Assets.xcassets\profile.imageset\user %281%29.png" />
     <ImageAsset Include="Assets.xcassets\profile.imageset\user %282%29.png" />
+    <ImageAsset Include="Assets.xcassets\heart.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\heart.imageset\heart.png" />
+    <ImageAsset Include="Assets.xcassets\heart.imageset\heart %281%29.png" />
+    <ImageAsset Include="Assets.xcassets\heart.imageset\heart %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -150,5 +154,8 @@
       <Project>{AF3A9718-C5E7-4581-A20A-DC7C15BD5F37}</Project>
       <Name>AnimationsSample</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\heart.imageset\" />
   </ItemGroup>
 </Project>

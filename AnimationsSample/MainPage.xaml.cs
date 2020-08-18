@@ -50,6 +50,12 @@ namespace AnimationsSample
             await Navigation.PushAsync(new PancakeGradientShiftsPage());
         }
 
+        async void Heartbeat_Clicked(System.Object sender, System.EventArgs e)
+        {
+            PreAnimation(Gradient);
+            await Navigation.PushAsync(new HeartBeat());
+        }
+
         async void PreAnimation(Button btn)
         {
             var actualColor = btn.BackgroundColor;
