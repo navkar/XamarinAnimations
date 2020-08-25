@@ -56,6 +56,12 @@ namespace AnimationsSample
             await Navigation.PushAsync(new HeartBeat());
         }
 
+        async void FreshBackground_Clicked(System.Object sender, System.EventArgs e)
+        {
+            PreAnimation(Gradient);
+            await Navigation.PushAsync(new FashionLabel());
+        }
+
         async void PreAnimation(Button btn)
         {
             var actualColor = btn.BackgroundColor;
@@ -68,6 +74,5 @@ namespace AnimationsSample
             mySnack.Message = "You are entered the incorrect parameter. This is a long message.";
             mySnack.IsOpen = !mySnack.IsOpen;
         }
-
     }
 }

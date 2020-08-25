@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:AnimationsSample.Controls"
+             Title="Fashion Labels"
+             ControlTemplate="{StaticResource FashionBackground}"
+             x:Class="AnimationsSample.FashionLabel">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,20,20,10">
+                <controls:GradientLabel FontAttributes="Bold" FontSize="50" Text="SUPREME" TextColor1="Azure" TextColor2="HotPink" />
+                <controls:GradientLabel FontAttributes="Bold" FontSize="35" Text="UNDER ARMOUR" TextColor1="#1a2a6c" TextColor2="#91EAE4" />
+                <controls:GradientLabel FontAttributes="Bold" FontSize="50" Text="REEBOK" TextColor1="#FC466B" TextColor2="#3F5EFB" />
+                <controls:GradientLabel FontAttributes="Bold" FontSize="50" Text="NIKE" TextColor1="Gold" TextColor2="Black" />
+                <controls:GradientLabel FontAttributes="Bold" FontSize="50" Text="Fitbit" TextColor1="#43cea2" TextColor2="#185a9d" />
+                <controls:GradientLabel FontAttributes="Bold" FontSize="50" Text="Adidas" TextColor1="#9D50BB" TextColor2="#00d2ff" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -18,6 +18,7 @@
                 <Button x:Name="Bounce" Text="MacOS Bouncy Icons" Clicked="Bounce_Clicked" />
                 <Button x:Name="Gradient" Text="Pancake Gradient Shifts" Clicked="Gradient_Clicked" />
                 <Button x:Name="Heartbeat" Text="Heartbeat" Clicked="Heartbeat_Clicked" />
+                <Button x:Name="FreshBackground" Text="Fashion Label" Clicked="FreshBackground_Clicked" />
                 <Button Text="Open SnackBar" Clicked="SnackBar_Clicked" />
             </StackLayout>
 

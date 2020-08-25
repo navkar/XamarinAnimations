@@ -22,10 +22,25 @@ namespace AnimationsSample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
+        {
+            try
+            {
+                var exception = ((Exception)args.ExceptionObject).GetBaseException();
+                Console.WriteLine("* * * Exception * * *\n\n" + exception);
+                //exception.Track();
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }

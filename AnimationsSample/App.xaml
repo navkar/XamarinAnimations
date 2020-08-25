@@ -5,7 +5,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" x:Class="AnimationsSample.App">
     <Application.Resources>
+        
 
+    <ControlTemplate x:Key="FashionBackground">
+        <Grid>
+            <magic:GradientView VerticalOptions="FillAndExpand" >
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                                linear-gradient(45deg, rgba(13, 151, 190,0.5) 0%, rgba(13, 151, 190,0.5) 55%,transparent 55%, transparent 56%,transparent 56%, transparent 66%,rgba(6, 216, 167,0.5) 66%, rgba(6, 216, 167,0.5) 100%),linear-gradient(135deg, rgb(13, 151, 190) 0%, rgb(13, 151, 190) 36%,transparent 36%, transparent 63%,rgb(19, 85, 213) 63%, rgb(19, 85, 213) 71%,rgb(6, 216, 167) 71%, rgb(6, 216, 167) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255))
+                             ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            <ContentPresenter />
+        </Grid> 
+    </ControlTemplate>
 
     <ControlTemplate x:Key="PageWithGradient">
         <Grid>
@@ -21,7 +38,7 @@
                 </magic:GradientView.GradientSource>
             </magic:GradientView>
             <ContentPresenter />
-        </Grid>
+        </Grid> 
     </ControlTemplate>
 
     <ControlTemplate x:Key="LightGradient">
@@ -48,7 +65,7 @@
                     <magic:CssGradientSource>
                         <x:String>
                             <![CDATA[
-                                linear-gradient(315deg, transparent 0%, transparent 30%,rgba(231, 84, 216,0.5) 30%, rgba(231, 84, 216,0.5) 58%,transparent 58%, transparent 72%,rgba(122, 77, 232,0.5) 72%, rgba(122, 77, 232,0.5) 100%),linear-gradient(270deg, rgb(38,45,200) 0%, rgb(38,45,200) 33%,rgb(182,53,227) 33%, rgb(182,53,227) 47%,transparent 47%, transparent 69%,rgb(122, 77, 232) 69%, rgb(122, 77, 232) 100%),linear-gradient(360deg, rgb(89,60,208),rgb(89,60,208))
+                                radial-gradient(circle at 29% 55%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(160deg, rgb(83, 91, 235),rgb(76, 11, 174))
                              ]]>
                         </x:String>
                     </magic:CssGradientSource>
