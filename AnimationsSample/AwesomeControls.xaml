@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:AnimationsSample.Controls"
+             Title="Awesome Controls"
+             ControlTemplate="{StaticResource PageWithGradient}"
+             x:Class="AnimationsSample.AwesomeControls">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" WidthRequest="400" HorizontalOptions="Center">
+            <controls:FloatingLabelInput Title="Username" HorizontalOptions="Center" Margin="20,5,20,10" />
+            <controls:FloatingLabelInput Title="Password" IsPassword="true" HorizontalOptions="Center" Margin="20,10,20,10" />
+            <Button Text="Sign In" Margin="20,10,20,5" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
