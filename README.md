@@ -2,7 +2,7 @@
 
 ## Home
 
-![Alt text](screenshots/home.png?raw=true "Title")
+![Alt text](screenshots/title.png?raw=true "Title")
 
 ## Heartbeat Animation
 ### Source Code
